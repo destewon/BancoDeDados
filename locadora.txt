@@ -1,0 +1,64 @@
+CREATE DATABASE locadora;
+
+CREATE TABLE cliente(
+
+
+	 nome						VARCHAR(45) NOT NULL,
+	 logradouro 			VARCHAR(45) NOT NULL,
+	 numero_logradouro	INTEGER NOT NULL, 
+	 bairro					VARCHAR(45) NOT NULL, 
+	 cidade					VARCHAR(45) NOT NULL, 
+	 estado					VARCHAR(45) NOT NULL, 
+	 telefone				VARCHAR(45), 
+	 cpf						VARCHAR(45) NOT NULL, 
+	 rg						VARCHAR(45) NOT NULL, 
+	 sexo					CHAR	NOT NULL, 
+	 data_nascimento		VARCHAR(45) NOT NULL, 
+	 idade					INTEGER
+	
+
+);
+
+CREATE TABLE filme(
+
+	 codigo					INTEGER NOT NULL, 
+	 nome						VARCHAR(45) NOT NULL,
+	 genero		 			VARCHAR(45) NOT NULL,
+	 valor					DOUBLE NOT NULL, 
+	 disponivel				BOOL NOT NULL,
+	 promocao				BOOL NOT NULL,
+	 valor_promocao		DOUBLE NOT NULL
+);
+
+CREATE TABLE vendedor(
+
+
+	 nome						VARCHAR(45) NOT NULL,
+	 area_venda				VARCHAR(45) NOT NULL,
+	 cidade					VARCHAR(45) NOT NULL, 
+	 estado					VARCHAR(45) NOT NULL,  	  
+	 sexo						CHAR	NOT NULL, 
+	 idade					INTEGER,
+	 salario					DOUBLE NOT NULL
+
+);
+
+CREATE TABLE cidade(
+
+
+	 nome		VARCHAR(45) NOT NULL
+	 
+	 
+
+);	
+
+
+CREATE TABLE estado(
+
+
+	 nome		VARCHAR(45) NOT NULL,
+	 uf		VARCHAR(2) NOT NULL
+	 
+
+);	
+
